@@ -36,6 +36,7 @@ autocmd BufNewFile,BufRead *.py set ts=3 sts=3 sw=3 expandtab autoindent filefor
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2 noexpandtab
 " Go {{{2
 autocmd FileType go setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype go iabbrev <buffer> ftst func TestX(t *testing.T) {<CR>}<ESC>?X<CR>xh
 
 " Plugins {{{1
 " NetRW {{{2
@@ -86,8 +87,6 @@ if has("autocmd")
 
   autocmd FileType go setlocal omnifunc=go#complete#Complete
   autocmd FileType go setlocal completeopt=longest,menuone
-
-  autocmd Filetype go iabbrev <buffer> ftst func Test(t *testing.T) {<CR>}<ESC>k2wh
 endif
 
 function! s:BuildGoFiles()

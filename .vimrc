@@ -2,6 +2,8 @@
 set modelines=1
 "autocmd BufWritePost .vimrc source $MYVIMRC
 
+imap <ESC>3 #
+
 " General {{{1
 let mapleader='\'
 syntax on

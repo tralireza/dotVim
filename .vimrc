@@ -34,6 +34,7 @@ map <Leader>ew :e <C-R>=expand("%:p:h")."/"<CR>
 " Language {{{1
 " Python {{{2
 autocmd BufNewFile,BufRead *.py set ts=3 sts=3 sw=3 expandtab autoindent fileformat=unix
+autocmd BufNewFile,Bufread *.py match ErrorMsg /\s\+$/
 " JavaScript {{{2
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2 noexpandtab
 " Go {{{2

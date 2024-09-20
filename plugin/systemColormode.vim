@@ -2,7 +2,7 @@
 " dark/light
 
 let g:light_colscheme = get(g:, 'light_colscheme', 'morning')
-let g:dark_colscheme = get(g:, 'dark_colscheme', 'retrobox')
+let g:dark_colscheme = get(g:, 'dark_colscheme', 'jellybeans')
 
 let s:current_bg = readfile($HOME . "/.vim/system_colormode.txt")[0]
 

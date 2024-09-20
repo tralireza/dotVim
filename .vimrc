@@ -8,7 +8,6 @@ imap <ESC>3 #
 let mapleader='\'
 syntax on
 
-set spell
 set autowrite
 set encoding=utf-8
 set clipboard=unnamed
@@ -37,7 +36,6 @@ map <Leader>ew :e <C-R>=expand("%:p:h")."/"<CR>
 autocmd BufNewFile,BufRead *.py set ts=4 sts=4 sw=4 expandtab autoindent fileformat=unix
 autocmd BufNewFile,BufRead *.py match ErrorMsg /\s\+$/
 autocmd BufWritePost *.py call flake8#Flake8()
-set foldmethod=indent
 
 " JavaScript {{{2
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2 noexpandtab

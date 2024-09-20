@@ -8,6 +8,7 @@ imap <ESC>3 #
 let mapleader='\'
 syntax on
 
+set spell
 set autowrite
 set encoding=utf-8
 set clipboard=unnamed
@@ -49,6 +50,7 @@ autocmd Filetype go iabbrev <buffer> ftst func TestX(t *testing.T) {<CR>}<ESC>?X
 let g:netrw_liststyle=3
 let g:netrw_banner=1
 let g:netrw_browse_split=0
+
 " VimGo {{{2
 let g:go_highlight_build_constraints=1
 let g:go_highlight_extra_types=1

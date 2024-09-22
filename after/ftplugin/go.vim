@@ -1,1 +1,2 @@
-set foldmethod=syntax
+setlocal foldmethod=syntax
+setlocal spell

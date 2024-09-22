@@ -76,7 +76,7 @@ if has("autocmd")
 	autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
 
 	"autocmd FileType go nmap <Leader>d <Plug>(go-doc) "normal K
-	autocmd FileType go nmap <Leader>h <Plug>(go-decls)
+	autocmd FileType go nmap <Leader>h <Plug>(go-decls-dir)
 	autocmd FileType go nmap <Leader>c <plug>(go-coverage-toggle)
 	autocmd FileType go nmap <Leader>r <Plug>(go-run)
 	autocmd FileType go nmap <Leader>t <Plug>(go-test)

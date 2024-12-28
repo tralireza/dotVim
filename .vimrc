@@ -77,10 +77,11 @@ if has("autocmd")
 
 	"autocmd FileType go nmap <Leader>d <Plug>(go-doc) "normal K
 	autocmd FileType go nmap <Leader>h <Plug>(go-decls-dir)
-	autocmd FileType go nmap <Leader>c <plug>(go-coverage-toggle)
-	autocmd FileType go nmap <Leader>r <Plug>(go-run)
+	autocmd FileType go nmap <Leader>g <plug>(go-coverage-toggle)
+	autocmd FileType go nmap <Leader>c :GoCallers<CR>
+	autocmd FileType go nmap <Leader>r <Plug>(go-referrers)
 	autocmd FileType go nmap <Leader>t <Plug>(go-test)
-  autocmd FileType go nmap <leader>j <plug>(go-test-func)
+  autocmd FileType go nmap <leader>j :GoTestFunc -v<CR>
 	autocmd FileType go nmap <Leader>i <Plug>(go-info)
 	autocmd FileType go nmap <Leader>f <Plug>(go-fmt)
   autocmd Filetype go nmap <Leader>w <plug>(go-doc-browser)

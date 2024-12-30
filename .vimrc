@@ -50,6 +50,9 @@ let g:netrw_liststyle=3
 let g:netrw_banner=1
 let g:netrw_browse_split=0
 
+" RustVim {{{2
+let g:rustfmt_autosave=1
+
 " VimGo {{{2
 let g:go_highlight_build_constraints=1
 let g:go_highlight_extra_types=1

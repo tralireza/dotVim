@@ -41,7 +41,7 @@ autocmd BufWritePost *.py call flake8#Flake8()
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2 noexpandtab
 
 " Go {{{2
-autocmd FileType go setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType go setlocal ts=4 sts=4 sw=4 expandtab
 autocmd Filetype go iabbrev <buffer> ftst func TestX(t *testing.T) {<CR>}<ESC>?X<CR>xh
 
 " Plugins {{{1
@@ -93,8 +93,6 @@ if has("autocmd")
   autocmd Filetype go nmap <Leader>e <plug>(go-iferr)
 
   autocmd FileType go nmap <leader>b :<C-u>call <SID>BuildGoFiles()<CR>
-
-  autocmd BufNewFile,BufRead *.go setlocal tabstop=2 shiftwidth=2
 
   autocmd FileType go setlocal omnifunc=go#complete#Complete
   autocmd FileType go setlocal completeopt=longest,menuone

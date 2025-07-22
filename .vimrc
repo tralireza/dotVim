@@ -46,7 +46,6 @@ autocmd FileType javascript setlocal ts=2 sts=2 sw=2 noexpandtab
 
 " Go {{{2
 autocmd FileType go setlocal ts=4 sts=4 sw=4 expandtab
-autocmd Filetype go iabbrev <buffer> ftst func TestX(t *testing.T) {<CR>}<ESC>?X<CR>xh
 autocmd Filetype go iabbrev <buffer> ftst func TestX(t *testing.T) {<CR>for _, c := range []struct{<CR>rst<CR>}{<CR>{},<CR>}{ <CR>log.Print("* ", c.)<CR>if c.rst != () {<CR>t.FailNow()<CR>}<CR>log.Print(":: ", c.rst)<CR>}<CR>}<ESC>?X<CR>xh
 
 " Rust {{{2
@@ -96,17 +95,17 @@ let g:go_jump_to_error=1
 let g:go_test_show_name=1
 
 if has("autocmd")
-	autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
+  autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
 
-	"autocmd FileType go nmap <Leader>d <Plug>(go-doc) "normal K
-	autocmd FileType go nmap <Leader>h <Plug>(go-decls-dir)
-	autocmd FileType go nmap <Leader>g <plug>(go-coverage-toggle)
-	autocmd FileType go nmap <Leader>c :GoCallers<CR>
-	autocmd FileType go nmap <Leader>r <Plug>(go-referrers)
-	autocmd FileType go nmap <Leader>t <Plug>(go-test)
+  "autocmd FileType go nmap <Leader>d <Plug>(go-doc) "normal K
+  autocmd FileType go nmap <Leader>h <Plug>(go-decls-dir)
+  autocmd FileType go nmap <Leader>g <plug>(go-coverage-toggle)
+  autocmd FileType go nmap <Leader>c :GoCallers<CR>
+  autocmd FileType go nmap <Leader>r <Plug>(go-referrers)
+  autocmd FileType go nmap <Leader>t <Plug>(go-test)
   autocmd FileType go nmap <leader>j :GoTestFunc -v<CR>
-	autocmd FileType go nmap <Leader>i <Plug>(go-info)
-	autocmd FileType go nmap <Leader>f <Plug>(go-fmt)
+  autocmd FileType go nmap <Leader>i <Plug>(go-info)
+  autocmd FileType go nmap <Leader>f <Plug>(go-fmt)
   autocmd Filetype go nmap <Leader>w <plug>(go-doc-browser)
   autocmd Filetype go nmap <Leader>y <plug>(go-sameids)
   autocmd Filetype go nmap <Leader>m <plug>(go-implements)

@@ -25,6 +25,8 @@ command! -nargs=* Wrap set wrap linebreak nolist
 nmap § :set list!<CR>
 map <Leader>ew :e <C-R>=expand("%:p:h")."/"<CR>
 
+autocmd BufReadPost fugitive://* set bufhidden=delete
+
 if has("mouse")
   set mouse= "let's use Alacritty mouse/clicks"
 endif

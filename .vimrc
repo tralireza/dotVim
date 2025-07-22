@@ -52,6 +52,9 @@ autocmd Filetype go iabbrev <buffer> ftst func TestX(t *testing.T) {<CR>for _, c
 " Rust {{{2
 autocmd FileType rust iabbrev <buffer> ftst #[test]<cr>fn test_X() {<cr>for (rst, ) in [<cr>(,),<cr>] {<cr>println!("* {}");<cr>assert_eq!(Sol::(), rst);<cr>println!(":: {rst:?}");<cr>}<cr>}<esc>?X<cr>xh
 
+" Yaml {{{2
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 
 " Plugins {{{1
 " NetRW {{{2

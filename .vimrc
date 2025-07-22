@@ -1,4 +1,4 @@
-""" vim: set foldmethod=marker :""" 
+""" vim: set foldmethod=marker :"""
 set modelines=1
 "autocmd BufWritePost .vimrc source $MYVIMRC
 
@@ -8,6 +8,7 @@ imap <ESC>3 #
 let mapleader='\'
 syntax on
 
+set updatetime=1000 "write tmp -> GitGutter refresh"
 set autowrite
 set encoding=utf-8
 set clipboard=unnamed
@@ -15,18 +16,11 @@ set number
 set nowrapscan
 set hidden
 set foldcolumn=5
-set ts=2 sts=2 sw=2 expandtab "Default Tab/Whitespace"
+set ts=4 sts=4 sw=4 expandtab "Default Tab/Whitespace"
 set listchars=eol:$,space:.,tab:»-
-"set matchpairs+=<:>
 
 filetype indent plugin on
 command! -nargs=* Wrap set wrap linebreak nolist
-
-"colorscheme morning
-"colorscheme retrobox
-"highlight FoldColumn ctermbg=Black ctermfg=Grey
-"highlight Folded ctermfg=Black
-"highlight MatchParen ctermbg=12
 
 nmap § :set list!<CR>
 map <Leader>ew :e <C-R>=expand("%:p:h")."/"<CR>

@@ -25,6 +25,10 @@ command! -nargs=* Wrap set wrap linebreak nolist
 nmap § :set list!<CR>
 map <Leader>ew :e <C-R>=expand("%:p:h")."/"<CR>
 
+if has("mouse")
+  set mouse= "let's use Alacritty mouse/clicks"
+endif
+
 " Language {{{1
 " Python {{{2
 autocmd BufNewFile,BufRead *.py set ts=4 sts=4 sw=4 expandtab autoindent fileformat=unix

@@ -29,6 +29,10 @@ if has("mouse")
   set mouse= "let's use Alacritty mouse/clicks"
 endif
 
+let g:loaded_python3_provider=0
+let g:loaded_perl_provider=0
+let g:loaded_ruby_provider=0
+
 " Language {{{1
 " Python {{{2
 autocmd BufNewFile,BufRead *.py set ts=4 sts=4 sw=4 expandtab autoindent fileformat=unix

@@ -58,6 +58,9 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 " Sh {{{2
 autocmd Filetype sh setlocal expandtab
 
+" Cucumber (feature) {{{2
+autocmd FileType feature setlocal ts=2 sts=2 sw=2 expandtab
+
 
 " Plugins {{{1
 " NetRW {{{2

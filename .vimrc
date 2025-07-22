@@ -61,6 +61,8 @@ autocmd Filetype sh setlocal expandtab
 " Cucumber (feature) {{{2
 autocmd FileType feature setlocal ts=2 sts=2 sw=2 expandtab
 
+" JSON {{{2
+autocmd FileType json setlocal ts=4 sts=4 sw=4 expandtab
 
 " Plugins {{{1
 " NetRW {{{2

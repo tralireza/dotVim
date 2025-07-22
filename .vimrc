@@ -49,6 +49,9 @@ autocmd FileType go setlocal ts=4 sts=4 sw=4 expandtab
 autocmd Filetype go iabbrev <buffer> ftst func TestX(t *testing.T) {<CR>}<ESC>?X<CR>xh
 autocmd Filetype go iabbrev <buffer> ftst func TestX(t *testing.T) {<CR>for _, c := range []struct{<CR>rst<CR>}{<CR>{},<CR>}{ <CR>log.Print("* ", c.)<CR>if c.rst != () {<CR>t.FailNow()<CR>}<CR>log.Print(":: ", c.rst)<CR>}<CR>}<ESC>?X<CR>xh
 
+" Rust {{{2
+autocmd FileType rust iabbrev <buffer> ftst #[test]<cr>fn test_X() {<cr>for (rst, ) in [<cr>(,),<cr>] {<cr>println!("* {}");<cr>assert_eq!(Sol::(), rst);<cr>println!(":: {rst:?}");<cr>}<cr>}<esc>?X<cr>xh
+
 
 " Plugins {{{1
 " NetRW {{{2

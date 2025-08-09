@@ -27,4 +27,4 @@ function! SysColorModeToggle()
   call SysColorMode()
 endfunction
 
-autocmd VimEnter * call SysColorMode()
+" autocmd VimEnter * call SysColorMode()
